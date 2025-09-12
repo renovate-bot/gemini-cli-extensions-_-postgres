@@ -1,0 +1,23 @@
+{
+  "name": "PostgreSQL",
+  "version": "0.1.0",
+  "description": "Connect to PostgreSQL",
+  "mcpServers": {
+    "PostgreSQL": {
+      "command": "${extensionPath}${/}toolbox",
+      "args": [
+        "--prebuilt",
+        "postgres",
+        "--stdio"
+      ],
+      "env": {
+        "POSTGRES_HOST": "${POSTGRES_HOST}",
+        "POSTGRES_PORT": "${POSTGRES_PORT}",
+        "POSTGRES_DATABASE": "${POSTGRES_DATABASE}",
+        "POSTGRES_USER": "${POSTGRES_USER}",
+        "POSTGRES_PASSWORD": "${POSTGRES_PASSWORD}"
+      }
+    }
+  },
+  "contextFileName": "POSTGRESQL.md"
+}
