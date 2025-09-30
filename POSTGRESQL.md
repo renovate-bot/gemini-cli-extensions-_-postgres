@@ -33,6 +33,16 @@ This section covers connecting to a PostgreSQL database instance.
 
 # Usage Guidelines
 
+## Connecting to New Resources
+
+You will need to perform the following steps to change the current database connection:
+
+1.  **(Optional) Save your conversation:** To avoid losing your progress, save the current session by running the command: `/chat save <your-tag>`
+2.  **Stop the CLI:** Terminate the Gemini CLI.
+3.  **Update Environment Variables:** Set or update your environment variables (e.g. `POSTGRES_DATABASE`) to point to the new resource.
+4.  **Restart:** Relaunch the Gemini CLI
+5.  **(Optional) Resume conversation:** Resume your conversation with the command: `/chat resume <your-tag>`
+
 ## Reusing Project Values
 
 Users may have set project environment variables:
